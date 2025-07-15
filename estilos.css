@@ -1,0 +1,145 @@
+/* estilos.css */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8ef;
+  color: #333;
+}
+
+header {
+  background-color: #ffbc00;
+  color: #721c0e;
+  text-align: center;
+  padding: 0.5rem 0 !important;
+}
+
+header h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2.5rem;
+  margin: 0.2rem 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.logo {
+  width: 180px !important;
+  max-width: 100%;
+  animation: float 3s ease-in-out infinite;
+  display: block;
+  margin: -20px auto;
+  margin-top: -10px;  /* NUEVO */
+  margin-bottom: -10px;  /* NUEVO */
+}
+
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+nav {
+  background-color: #ffbc00;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5rem;
+  margin: 0;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 0.3rem;
+}
+
+nav a {
+  background-color: #ffe8bb;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #c63400;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #fff;
+  border-color: #c63400;
+}
+
+main {
+  padding: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section {
+  display: none;
+}
+
+section.active {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  color: #c63400;
+  border-bottom: 2px solid #c63400;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: #da9700;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+p, ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
